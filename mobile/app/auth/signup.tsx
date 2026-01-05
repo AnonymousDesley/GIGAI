@@ -89,7 +89,7 @@ export default function SignupScreen() {
 
                 <View className="items-center mb-12">
                     <Image
-                        source={require('../../assets/images/logo.png')}
+                        source={require('../../assets/gigai_brand.png')}
                         className="w-16 h-16"
                         resizeMode="contain"
                     />

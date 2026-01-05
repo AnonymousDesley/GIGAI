@@ -76,10 +76,9 @@ export default function LoginScreen() {
         <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} className="flex-1 bg-transparent">
             <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} className="p-8 bg-transparent">
 
-                {/* 1. Centered Logo */}
                 <View className="items-center mb-12">
                     <Image
-                        source={require('../../assets/images/logo.png')}
+                        source={require('../../assets/gigai_brand.png')}
                         className="w-16 h-16"
                         resizeMode="contain"
                     />
