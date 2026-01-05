@@ -15,7 +15,8 @@
       },
       "env": {
         "EXPO_PUBLIC_API_URL": "https://gigai-backend.onrender.com/api/github"
-      }
+      },
+      "autoIncrement": true
     },
     "production": {
       "autoIncrement": true

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { supabase } from '../../lib/supabase';
 import { useRouter, Link } from 'expo-router';
 import { Github } from 'lucide-react-native';
 import { makeRedirectUri } from 'expo-auth-session';
 import * as WebBrowser from 'expo-web-browser';
 import * as Linking from 'expo-linking';
+import BrandLogo from '../../components/BrandLogo';
 
 WebBrowser.maybeCompleteAuthSession(); // Ensure auth session cleanup
 
@@ -77,11 +78,7 @@ export default function LoginScreen() {
             <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} className="p-8 bg-transparent">
 
                 <View className="items-center mb-12">
-                    <Image
-                        source={require('../../assets/gigai_brand.png')}
-                        className="w-16 h-16"
-                        resizeMode="contain"
-                    />
+                    <BrandLogo size={80} />
                 </View>
 
                 {/* 2. Heading */}
