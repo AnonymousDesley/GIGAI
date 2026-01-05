@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Image } from 'react-native';
 import { supabase } from '../../lib/supabase';
 import { useRouter, Link } from 'expo-router';
-import { Github, Zap } from 'lucide-react-native';
+import { Github } from 'lucide-react-native';
 import { makeRedirectUri } from 'expo-auth-session';
 import * as WebBrowser from 'expo-web-browser';
 import * as Linking from 'expo-linking';
@@ -78,9 +78,11 @@ export default function LoginScreen() {
 
                 {/* 1. Centered Logo */}
                 <View className="items-center mb-12">
-                    <View className="w-16 h-16 bg-white rounded-2xl items-center justify-center shadow-2xl">
-                        <Zap size={32} color="black" fill="black" />
-                    </View>
+                    <Image
+                        source={require('../../assets/images/logo.png')}
+                        className="w-16 h-16"
+                        resizeMode="contain"
+                    />
                 </View>
 
                 {/* 2. Heading */}

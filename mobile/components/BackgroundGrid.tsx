@@ -15,7 +15,7 @@ export default function BackgroundGrid() {
                         height="40"
                         patternUnits="userSpaceOnUse"
                     >
-                        <Rect x="0" y="0" width="40" height="40" fill="transparent" stroke="#333" strokeOpacity="0.5" strokeWidth="1" />
+                        <Rect x="0" y="0" width="40" height="40" fill="transparent" stroke="#333" strokeOpacity="1" strokeWidth="1" />
                     </Pattern>
                 </Defs>
                 <Rect x="0" y="0" width="100%" height="100%" fill="url(#grid)" />
